@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/raj1828.github.io/OWASP_Progress_Tracker/static/css/main.3019a77b.css",
+    "main.js": "/raj1828.github.io/OWASP_Progress_Tracker/static/js/main.527c6f5e.js",
+    "static/js/453.7857ebf8.chunk.js": "/raj1828.github.io/OWASP_Progress_Tracker/static/js/453.7857ebf8.chunk.js",
+    "index.html": "/raj1828.github.io/OWASP_Progress_Tracker/index.html",
+    "main.3019a77b.css.map": "/raj1828.github.io/OWASP_Progress_Tracker/static/css/main.3019a77b.css.map",
+    "main.527c6f5e.js.map": "/raj1828.github.io/OWASP_Progress_Tracker/static/js/main.527c6f5e.js.map",
+    "453.7857ebf8.chunk.js.map": "/raj1828.github.io/OWASP_Progress_Tracker/static/js/453.7857ebf8.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.3019a77b.css",
+    "static/js/main.527c6f5e.js"
+  ]
+}
