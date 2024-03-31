@@ -27,6 +27,7 @@
   border-radius: 10px;
   padding: 20px;
   margin-right: 20px;
+  margin-top: 30px;
 }
 
 .checkbox-column {
@@ -35,6 +36,7 @@
   border-radius: 10px;
   padding: 20px;
   overflow-y: auto; /* Enable scrolling if needed */
+  margin-top: 30px;
 }
 
 .column-heading {
@@ -102,4 +104,50 @@ label {
 .completion-message {
   color: green;
   font-weight: bold;
+}
+/* Add these styles to align dropdowns to the right and style them */
+.checkbox-item {
+  display: flex;
+  align-items: center;
+}
+
+.dropdown {
+  margin-left: auto; /* Align dropdowns to the right */
+  background-color: #f0f7ff; /* Matching theme color */
+  border: 1px solid #007bff; /* Matching theme color */
+  border-radius: 5px;
+  padding: 5px;
+  color: #007bff; /* Matching theme color */
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.dropdown:focus {
+  outline: none; /* Remove focus outline */
+}
+/* CircularProgressTracker.css */
+
+.wrapper {
+  max-width: 1200px; /* Set maximum width */
+  margin: 0 auto; /* Center the content */
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+}
+
+@media (min-width: 768px) {
+  .container {
+    flex-direction: row; /* Change to row layout on larger screens */
+    justify-content: space-between; /* Space out the columns */
+  }
+
+  .progress-column {
+    width: 60%; /* Adjust width for larger screens */
+  }
+
+  .checkbox-column {
+    width: 35%; /* Adjust width for larger screens */
+  }
 }

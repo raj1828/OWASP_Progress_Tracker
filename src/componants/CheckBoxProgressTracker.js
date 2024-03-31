@@ -38,7 +38,6 @@ const CheckBoxProgressTracker = () => {
           <div
             className="progress-bar-container"
             style={{
-              width: '80%', // Adjust width as needed
               backgroundColor: '#f0f7ff',
               borderRadius: '10px',
               padding: '20px',
@@ -49,7 +48,7 @@ const CheckBoxProgressTracker = () => {
               className="progress-bar"
               style={{
                 width: `${progress}%`,
-                backgroundColor: progress === 100 ? 'green' : '#007bff', // Change color to green when progress is 100%
+                backgroundColor: progress === 100 ? 'green' : '#007bff',
                 borderRadius: '5px',
                 height: '20px',
                 transition: `width 0.5s ${progress === 0 || progress === 100 ? 'ease' : 'linear'}`,
@@ -59,7 +58,7 @@ const CheckBoxProgressTracker = () => {
           <p className="progress-text">Progress: {progress.toFixed(2)}%</p>
           {completionMessage}
         </div>
-        <div className="checkbox-column" style={{ width: '20%' }}> {/* Adjust width as needed */}
+        <div className="checkbox-column">
           <h2 className="column-heading">Tasks</h2>
           {checkboxes.map((checkbox) => (
             <div key={checkbox.id} className="checkbox-item">
@@ -69,6 +68,12 @@ const CheckBoxProgressTracker = () => {
                 onChange={(e) => handleChange(e.target.checked)}
               />
               <label htmlFor={`checkbox-${checkbox.id}`}>{checkbox.label}</label>
+              <select className="dropdown">
+                <option value="option1">Not Started</option>
+                <option value="option2">Pass</option>
+                <option value="option3">Issues</option>
+                <option value="option4">N/A</option>
+              </select>
             </div>
           ))}
         </div>
